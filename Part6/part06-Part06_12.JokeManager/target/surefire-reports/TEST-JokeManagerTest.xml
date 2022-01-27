@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="16" failures="7" name="JokeManagerTest" time="0.039" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.13+8"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\yelon\OneDrive\Dokumenter\NetBeansProjects\mooc-java-programming-i\part06-Part06_12.JokeManager"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="DK"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\yelon\OneDrive\Dokumenter\NetBeansProjects\mooc-java-programming-i\part06-Part06_12.JokeManager"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.13+8"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\yelon\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\TMCBeans\java\maven\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin;C:\Program Files\Java\jdk-11.0.1\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files(x86)\Java\jdk1.8.0_131\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;%JAVA_HOME&amp;\bin;C:\Program Files\Git\cmd;C:\Users\yelon\AppData\Local\Microsoft\WindowsApps;C:\Users\yelon\AppData\Local\GitHubDesktop\bin;C:\Users\yelon\AppData\Local\atom\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\TMCBeans\java\maven\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\TMCBeans\java\maven\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\yelon"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="yelon"/>
+    <property name="java.class.path" value="C:\Program Files\TMCBeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="error"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dfile.encoding=UTF-8 -T=1 -q clean install"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot"/>
+    <property name="user.language" value="da"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.13"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="maven.home" value="C:\Program Files\TMCBeans\java\maven\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-11.0.13+8"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="JokeManagerTest" name="oneJokeAndDraw" time="0.023"/>
+  <testcase classname="JokeManagerTest" name="testStopping" time="0">
+    <failure message="The constructor UserInterface(JokeManager, Scanner) is missing." type="java.lang.AssertionError">java.lang.AssertionError: The constructor UserInterface(JokeManager, Scanner) is missing.
+	at fi.helsinki.cs.tmc.edutestutils.ReflectionUtils.requireConstructor(ReflectionUtils.java:222)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.getConstructor(Reflex.java:542)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeCtor(Reflex.java:579)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeImpl(Reflex.java:563)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef2.invoke(Reflex.java:775)
+	at JokeManagerTest.testStopping(JokeManagerTest.java:147)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <testcase classname="JokeManagerTest" name="testAddingAndStopping" time="0">
+    <failure message="The constructor UserInterface(JokeManager, Scanner) is missing." type="java.lang.AssertionError">java.lang.AssertionError: The constructor UserInterface(JokeManager, Scanner) is missing.
+	at fi.helsinki.cs.tmc.edutestutils.ReflectionUtils.requireConstructor(ReflectionUtils.java:222)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.getConstructor(Reflex.java:542)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeCtor(Reflex.java:579)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeImpl(Reflex.java:563)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef2.invoke(Reflex.java:775)
+	at JokeManagerTest.testAddingAndStopping(JokeManagerTest.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <testcase classname="JokeManagerTest" name="classJokeManagerHasCorrectMethods" time="0"/>
+  <testcase classname="JokeManagerTest" name="testPrinting" time="0">
+    <failure message="The constructor UserInterface(JokeManager, Scanner) is missing." type="java.lang.AssertionError">java.lang.AssertionError: The constructor UserInterface(JokeManager, Scanner) is missing.
+	at fi.helsinki.cs.tmc.edutestutils.ReflectionUtils.requireConstructor(ReflectionUtils.java:222)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.getConstructor(Reflex.java:542)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeCtor(Reflex.java:579)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeImpl(Reflex.java:563)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef2.invoke(Reflex.java:775)
+	at JokeManagerTest.testPrinting(JokeManagerTest.java:193)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <testcase classname="JokeManagerTest" name="printingJokes" time="0"/>
+  <testcase classname="JokeManagerTest" name="manyJokesAndDraw" time="0"/>
+  <testcase classname="JokeManagerTest" name="classJokeManagerHasParameterlessConstructor" time="0"/>
+  <testcase classname="JokeManagerTest" name="classUserInterfaceHasTwoObjectVariables" time="0.015"/>
+  <testcase classname="JokeManagerTest" name="noJokesAddedAndDraw" time="0"/>
+  <testcase classname="JokeManagerTest" name="testDrawing" time="0">
+    <failure message="The constructor UserInterface(JokeManager, Scanner) is missing." type="java.lang.AssertionError">java.lang.AssertionError: The constructor UserInterface(JokeManager, Scanner) is missing.
+	at fi.helsinki.cs.tmc.edutestutils.ReflectionUtils.requireConstructor(ReflectionUtils.java:222)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.getConstructor(Reflex.java:542)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeCtor(Reflex.java:579)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeImpl(Reflex.java:563)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef2.invoke(Reflex.java:775)
+	at JokeManagerTest.testDrawing(JokeManagerTest.java:222)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <testcase classname="JokeManagerTest" name="classUserInterfaceExists" time="0.001"/>
+  <testcase classname="JokeManagerTest" name="classUserInterfaceHasMethodStart" time="0">
+    <failure message="Method start() of class UserInterface missing." type="java.lang.AssertionError">java.lang.AssertionError: Method start() of class UserInterface missing.
+	at fi.helsinki.cs.tmc.edutestutils.ReflectionUtils.requireMethod(ReflectionUtils.java:305)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.requireExists(Reflex.java:621)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.requirePublic(Reflex.java:496)
+	at JokeManagerTest.classUserInterfaceHasMethodStart(JokeManagerTest.java:125)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <testcase classname="JokeManagerTest" name="classJokeManagerExists" time="0"/>
+  <testcase classname="JokeManagerTest" name="classUserInterfaceHasConstructorWithTwoParameters" time="0">
+    <failure message="The constructor UserInterface(JokeManager, Scanner) is missing." type="java.lang.AssertionError">java.lang.AssertionError: The constructor UserInterface(JokeManager, Scanner) is missing.
+	at fi.helsinki.cs.tmc.edutestutils.ReflectionUtils.requireConstructor(ReflectionUtils.java:222)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.requireExists(Reflex.java:618)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.requirePublic(Reflex.java:496)
+	at JokeManagerTest.classUserInterfaceHasConstructorWithTwoParameters(JokeManagerTest.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <testcase classname="JokeManagerTest" name="classJokeManagerOnlyHasOneObjectVariable" time="0">
+    <failure message="The class JokeManager only needsone object variable, remove the extra variables" type="java.lang.AssertionError">java.lang.AssertionError: The class JokeManager only needsone object variable, remove the extra variables
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at JokeManagerTest.sanityCheck(JokeManagerTest.java:244)
+	at JokeManagerTest.classJokeManagerOnlyHasOneObjectVariable(JokeManagerTest.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+</testsuite>
